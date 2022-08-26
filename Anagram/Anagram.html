@@ -1,0 +1,51 @@
+<script>
+    let string1 = "vikass";
+    let string2 = "vikast";
+    var count = 0;
+    var mount = 0;
+
+
+
+
+    if (string1.length == string2.length) {
+        for (var i = 0; i <= string1.length - 1; i++) {
+            for (var m = 0; m <= string2.length - 1; m++) {
+                if (string1[i] != string2[m]) {
+
+                    count++;
+                    break;
+                }
+            }
+        }
+
+        if (count >= i) {
+
+            if (string2.length == string1.length) {
+                for (var i = 0; i <= string1.length - 1; i++) {
+                    for (var m = 0; m <= string2.length - 1; m++) {
+                        if (string2[i] == string1[m]) {
+
+                            mount++;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+     
+        if (mount >= i) {
+            console.log("its a analgram");
+        }
+        else {
+            console.log("not a anlagram")
+        }
+
+
+
+    }
+    else {
+        console.log("not a anagram");
+    }
+
+
+</script>

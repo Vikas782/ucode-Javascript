@@ -1,0 +1,31 @@
+<script>
+
+
+
+function genrateBill(units)
+{
+
+if(units<0)
+{
+    return "Enter a Positive Number Of Unit"
+}
+if(units<=50)
+{
+    return units*3.50;
+}
+if(units<=150)
+    {
+        return (50*3.50)+ (units-50)*4;
+    }
+else if(units<=250)
+{
+    return (50*3.50) +(100*4)+(units-150)*5.20;
+}
+else if(units>250)
+{
+    return (50*3.50)+(100*4)+(100*5.20)+(units-250)*6.50
+}
+    return "Please Enter a Valid  units"
+}
+console.log(genrateBill(1));
+</script>
