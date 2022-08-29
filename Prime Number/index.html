@@ -1,0 +1,42 @@
+<input type="number" id="num"><br><br>
+<button onclick="primeNumber()">Prime Number</button>
+<p id="result"></p>
+<script>
+
+
+
+function primeNumber()
+{
+    let number=parseInt(document.getElementById("num").value);
+
+    count=0;
+    for(m=2;m<number;m++)
+    {
+
+        if(number%m==0)
+        {
+        count++;
+        break;
+        }
+    }
+
+    
+
+
+    if(count>0)
+    {
+        document.getElementById("result").innerHTML="not a prime number";
+    }
+    else if(number==1)
+    {
+        document.getElementById("result").innerHTML="1 is neither a prime number nor composite number";
+    }
+    else{
+        document.getElementById("result").innerHTML="prime number";
+    }
+
+}
+
+
+
+</script>

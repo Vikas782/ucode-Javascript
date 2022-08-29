@@ -1,0 +1,45 @@
+Enter Number 1<input type="text" id="num1"><br><br>
+ Enter number 2<input type="text" id="num2"><br><br>
+Enter Number 3<input type="text" id="num3"><br><br>
+<button onclick="check()">Check the answer</button>
+<p id="result"></p>
+
+
+
+<script>
+  
+
+
+    function check() {
+        let a = parseInt(document.getElementById("num1").value);
+    let b = parseInt(document.getElementById("num2").value);
+    let c = parseInt(document.getElementById("num3").value);
+
+
+
+        // if(a==b && b==c)
+        // {
+        //     document.getElementById("result").innerHTML ="All are equal";
+        // }
+
+        if (a<=b) {
+            if (b <= c) {
+                document.getElementById("result").innerHTML = `${c} is greater`;
+            }
+            else {
+                document.getElementById("result").innerHTML = `${b} is greater`;
+            }
+
+
+        }
+        else if (a>=b) {
+            if (a >=c) {
+                document.getElementById("result").innerHTML = `${a} is greater`;
+            }
+            else {
+                document.getElementById("result").innerHTML = `${c} is greater`;
+            }
+        }
+
+    }
+</script>

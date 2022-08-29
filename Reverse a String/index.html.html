@@ -1,0 +1,20 @@
+<input type="text" id="string">
+<button onclick="reverseString()">Reverse String</button>
+<p id="result"></p>
+
+<script>
+
+ function reverseString(){
+
+    
+let letter=document.getElementById("string").value;
+console.log(letter);
+let str ="";
+for(let i=letter.length-1;i>=0;i--)
+{
+    str=str+letter[i];
+}
+document.getElementById("result").innerHTML=str;
+
+    }
+</script>

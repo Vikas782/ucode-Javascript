@@ -1,0 +1,30 @@
+<input type="text" id="num"><br><br>
+<button onclick="factorial()">Check Result</button>
+<p id="result"></p>
+
+<script>
+
+function factorial()
+{
+let number=parseInt(document.getElementById("num").value);
+
+if(number<0)
+{
+document.getElementById("result").innerHTML="Please Enter Positive number";
+}
+if(number==0)
+{
+    document.getElementById("result").innerHTML=`factorial of ${number} is 1`;
+}
+
+fact=1;
+for(let i=1;i<=number;i++)
+{
+fact=fact*i;
+
+}
+document.getElementById("result").innerHTML=`Factorial of ${number}  is ${fact}`;
+
+}
+
+</script>

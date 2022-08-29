@@ -1,0 +1,21 @@
+<input type="text" id="cel">
+<button onclick="check()">Convert to F</button>
+<p id="result"></p>
+
+
+
+<script>
+
+
+function check()
+{
+
+
+ let c=parseInt(document.getElementById("cel").value);
+
+ let d=c*1.8+32;
+ document.getElementById("result").innerHTML=`${c} degree celsius is  ${d}  Fahrenhiet`;
+
+
+}
+</script>
