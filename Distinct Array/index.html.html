@@ -1,0 +1,15 @@
+<script>
+  function distinctArray() {
+    for (let i = 0; i < arguments.length; i++) {
+      for (var m = 0; m < arguments.length; m++) {
+        if (arguments[i] == arguments[m]) {
+          break;
+        }
+      }
+      if (i == m) {
+        console.log(arguments[i]);
+      }
+    }
+  }
+  distinctArray(1, 3, 1, 2, 4, 4, 5, 9, 0);
+</script>

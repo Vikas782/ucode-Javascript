@@ -1,0 +1,16 @@
+<script>
+let number=5;
+
+function factorail(num)
+{
+    if(num<=2)
+    {
+        return num;
+    }
+    else{
+    return num* factorail(num-1);
+    }
+}
+
+console.log(factorail(number));
+</script>
