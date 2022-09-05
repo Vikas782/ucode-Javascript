@@ -2,17 +2,28 @@ let person =
 {
     tasks: [],
     add: function () {
-        console.log(select.value)
+        
 
+        if(select.value=="null"){
         let task = {
             id: Date.now(),
-            description: text.value
+            description: text.value,
+            subdescription:[]
         }
         this.tasks.push(task)
-        console.log(this.tasks);
-
-
+        console.log(this.tasks)
         this.render(task)
+    }
+    if(select.value!=="null")
+        this.tasks.forEach(element => {
+            if(element.description==select.value)
+            {
+                element.subdescription.push(text.value)
+            }
+
+            console.log(this.tasks)
+        });
+
     },
 
     render: function (task = null) {
