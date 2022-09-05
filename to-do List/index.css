@@ -24,8 +24,8 @@ button{
 }
 textarea{
     height: 20rem;
-    margin-left: 17rem;
-    width: 45rem;
+    /* margin-left: 17rem; */
+    width: 40rem;
     border-radius: 9px;
     -webkit-border-radius: 9px;
     -moz-border-radius: 9px;
@@ -38,8 +38,8 @@ ul
     margin-left: 14.5rem;
 }
 .listyle{
-    /* background-color: grey; */
-  
+    background-color: grey;
+  justify-content: flex-end;
     margin-top: 5px;
     cursor: pointer;
     
@@ -50,7 +50,19 @@ ul
     text-decoration: line-through;
     background-color: aliceblue;
 }
-.addButton
+.main-div
 {
-    margin-left: 58rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.textclass
+{
+    height: 2rem;
+    width: 20rem;
+}
+.btn
+{
+    height: 30px;
+    width: 60px;
 }
