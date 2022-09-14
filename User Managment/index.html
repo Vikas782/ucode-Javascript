@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Register</title>
+</head>
+<body>
+   <header><h1>Register User</h1></header>
+
+<section id="section">
+<form onsubmit="return false">
+<input type="hidden" id="js-user-id">
+<label>Your Name</label><br>
+<input type="text" id="yourName" placeholder="ENTER YOUR NAME" required><br><br>
+
+<label>UserName</label><br>
+<input type="text" id="userName" placeholder="CHOOSE USERNAME" required><br><br>
+
+<label>Email Address</label><br>
+<input type="email"  id="mail" placeholder="ENTER YOUR EMAIL ADDRESS" required><br><br>
+
+<label>Mobile Number</label><br>
+<input type="number" name="" id="phone" placeholder="ENTER YOUR PHONE NUMBER" required><br><br>
+
+<button class="btn btn-register" onclick="managment.add({Name:yourName.value.trim(),UserName:userName.value.trim(),Mail:mail.value.trim(),Phone:phone.value.trim()})">Register</button>
+<button class="btn btn-edit" onclick="managment.update({Name:yourName.value.trim(),UserName:userName.value.trim(),Mail:mail.value.trim(),Phone:phone.value.trim()})">Update</button>
+</form>
+</section>
+
+<br><br>
+<h2>User Record and Managment</h2>
+<label id="searchLabel">Search</label>
+<input type="text" id="search" class="search" onkeyup="managment.search(search.value.trim())">
+
+
+<section class="tableSection">
+    <table id="table" style="width:100%">
+        <tr>
+          <th>NAME</th>
+          <th>USERNAME</th>
+          <th>EMAIL</th>
+          <th>PHONE NUMBER</th>
+          <th>Created On</th>
+          <th>Status</th>
+          <th>Action</th>
+      </table>
+</section>
+<script src="index.js"></script>
+</body>
+</html>

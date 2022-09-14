@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.container
+{
+    height: 400px;
+    width: 600px;
+    background-image: url("./img/img-1.jpg");
+    border: 2px solid rgb(80, 217, 255);
+    background-size: 600px 400px;
+    justify-content: center; 
+}
+.btn{
+    margin-top: 180px;
+    height: 2rem;
+    width: 3rem;
+    opacity: 0.5;
+    border: none;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.rightBtn{
+    margin-left:490px;
+}
+.leftBtn{
+    margin-left: 5px;
+}

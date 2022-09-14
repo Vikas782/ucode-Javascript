@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: bisque;
+    text-align: center;
+}
+
+h2{
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.btn{
+    height: 2rem;
+    width: 28.2em;
+    border-radius: 9px;
+    margin-top: .2rem;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    background-color: blanchedalmond;
+    font-weight: bold;
+    font-size: medium;
+    font-style: italic;
+}
+.btn-edit{
+    display: none;
+}
+.removeButton
+{
+    background-color: #e84118;
+}
+.editButton
+{
+    background-color: #0DCAF0;
+}
+.viewButton{
+    background-color: #FFC107;
+}
+
+
+label{
+ 
+  font-family: 'Merriweather', serif;
+}
+
+input:not(.search){
+    width: 28rem;
+    height: 1.8rem;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    font-family: 'Merriweather', serif;
+}
+.search{
+    margin-top: 1.5rem;
+    height: 1.3rem;
+    width: 13rem;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+#searchLabel{
+    margin-left: 60rem;
+}
+.VSButton{
+    background-color:#c7ecee;
+}
+
+.tableSection
+{
+    margin-top: 2rem;
+}
+
+table, th, td {
+    border:1px solid black;
+  }
+  th{
+      background-color: blanchedalmond;
+  }
+
+
+#section{
+    margin-top: 3rem;
+    margin-left: 26rem;
+}
+button:not(.btn)
+{
+    height: 1.5rem;
+    width: 4rem;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    margin-left: 2px;
+}
