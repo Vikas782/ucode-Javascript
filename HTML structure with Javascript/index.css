@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.navbarSection
+{
+    width: 100%;
+    height: 4.2rem;
+    background-color: black;
+    text-align: center;
+}
+.navInput{
+    height: 2.4rem;
+    width: 25rem;
+    margin-left: 8rem;
+    margin-top: .8rem;
+    border-radius: 5px;
+    font-size: large;
+    outline: none;
+    border-color: black;
+}
+.sellingButton{ height: 2.5rem; width: 10rem; background-color: black; color: white; border: 1px solid white; 
+  border-radius:5px ;
+ margin-left:5rem;
+ font-size: large;
+}
+.searchButton{
+    height: 2.5rem;
+    width: 10rem;
+    background-color: black;
+    color: white;
+    font-size: large;
+    border: 1px solid white;
+    border-radius:5px ;
+}
+
+.detailViewContainer
+{
+    display: flex;
+    height: 30rem;
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 8rem;
+}
+
+.productDetails{
+    height: 33rem;
+    width: 50%;
+    margin-top: 1rem;
+ 
+}
+.imageConatiner{
+   
+    height: 37rem;
+    width: 50%;
+    display: flex;
+ 
+}
+
+.imageDiv1{
+    height: 37rem;
+    width:15rem;
+    text-align: center;
+    justify-content: center;
+
+}
+.imageDiv2{
+    height: 37rem;
+    width:25rem;
+    text-align: center;
+    justify-content: center;
+}
+.imageContain1{ height: 9rem; width: 10rem; margin-top: 1rem; margin-left: 3.5rem; border-radius: 5px; background-image: url("./img/Rectangle-1.jpg"); -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px;
+}
+.imageContain3{ height: 9rem; width: 10rem; margin-top: 1rem; margin-left: 3.5rem; background-image: url("./img/Rectangle.jpg"); border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px;
+}  
+.imageContain4{ height: 9rem; width: 10rem; margin-top: 1rem; margin-left: 3.5rem; border-radius:5px ; background-image: url("./img/Rectangle-2.jpg"); -webkit-border-radius:5px ; -moz-border-radius:5px ; -ms-border-radius:5px ; -o-border-radius:5px ;
+}
+.imageContain2{ height:29rem; width: 24.5rem; margin-top: 1rem; border-radius:5px ; background-image: url("./img/rectangle-4.jfif"); background-size: cover; background-position: 20% 39%; -webkit-border-radius:5px ; -moz-border-radius:5px ; -ms-border-radius:5px ; -o-border-radius:5px ;
+}
+
+.imageContain2:hover{
+    transition: transform .5s ease-in-out;
+    transform: scale(1.05);
+ }
+ .imageContain1:hover{
+    transition: transform .5s ease-in-out;
+    transform: scale(1.05);
+ }
+ .imageContain3:hover{
+    transition: transform .5s ease-in-out;
+    transform: scale(1.05);
+ }
+ .imageContain4:hover{
+    transition: transform .5s ease-in-out;
+    transform: scale(1.05);
+ }
+h2{
+    margin-left: 3rem;   
+}
+h3{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+
+}
+h5{
+    color: grey;
+}
+.colorModel{
+    margin-left: 3rem;
+    color: grey;
+    margin-right: 7px;
+    margin-top: 1rem;
+    font-size: large;
+}
+.colorName{
+    margin-top: 1rem;
+    font-size: large;
+}
+
+.locationNviewDiv{
+    width: 30rem;
+    height: 2rem;
+    margin-top: 5px;
+    margin-left: 3rem;
+    display: flex;
+}
+.locationLogo{
+    width: 16px;
+    height: 18px;
+    margin-right: 4px;
+}
+.viewLogo{
+    width: 20px;
+    height: 20px;
+    margin-top: -2px;
+    margin-left: 1rem;
+    margin-right: 4px;
+}
+.phoneDiscription{
+    width: 30rem;
+    margin-left: 3rem;
+    font-size: larger;
+}
+.radioContainer{
+    width: 8rem;
+    height: 2rem;
+    margin-left: 2.5rem;
+    margin-top: 5px;
+    margin-bottom: .8rem;
+}
+input[type="radio"]
+{
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-left: 6px;
+}
+.deliveryTitle{
+margin-left:3rem ;
+color: grey;
+display: block;
+margin-bottom: 6px;
+font-size: large;
+}
+.storePickupButton{
+    width:7rem;
+    height: 2.5rem;
+    background: transparent;
+    margin-left: 3rem;
+    border-color: grey;
+    border-radius: 5px;
+    font-size: medium;
+}
+.deliveryButton{
+    width:7rem;
+    height: 2.5rem;
+    font-size: medium;
+    background: transparent;
+    margin-left: .8rem;
+    border-color: grey;
+    border-radius: 5px;
+}
+.quantityText{
+   margin-left: 3rem;
+   margin-top: 1rem;
+   color: grey;
+   font-size: large;
+}
+.quantityManager{
+    height: 2rem;
+    width: 12rem;
+    margin-left: 3rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid gray;
+    margin-top: 4px;
+    border-radius: 5px;
+}
+.subtractItem{
+    height: 2rem;
+    width: 3rem;
+    border: none;
+    font-size: medium;
+}
+.addItem{
+    height: 2rem;
+    width: 3rem; 
+    border: none;
+    font-size: medium;
+}
+.quantityOfItem{
+    height: 1.7rem;
+    width: 6rem;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: medium;
+}
+.deliveryCharges{
+    margin-left: 3rem;
+    font-size: large;
+
+}
+.deliveryDays{
+    color: grey;
+    margin-left: 1rem;
+    margin-right: 13rem;
+    font-size: large;
+}
+.buyNowButton{
+  height: 2.5rem;
+  width: 15rem;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  border: none;
+  font-size: large;
+  margin-right: 1.5rem;
+  border-radius: 5px;
+  background-color: #f5f6fa;
+}
+.makeAnOfferButton{
+    height: 2.5rem;
+    width: 15rem;
+    font-size: large;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffa502;
+}
+.modal{
+    height: 380px;
+    width: 360px;
+    border: 1.3px solid black;
+    display: none;
+    padding: 8px;
+    border-radius: 9px;
+    margin-left: 56rem;
+}
+.modalheaderContainer{
+    width: 97%;
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-left: .4rem;
+    
+}
+.crossButton{
+    height: 20px;
+    width:22px;
+    margin-left: 10px;
+}
+.modalOfferInput{
+    width: 21.5rem;
+    height: 2rem;
+    margin-left: .4rem;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 5px;
+}
+.modalDeliveryTitle{
+    margin-left:.4rem ;
+    color: grey;
+    display: block;
+    margin-bottom: 4px;
+    margin-top: .8rem;
+}
+.modalStorePickupButton{
+    width:6rem;
+    height: 2rem;
+    background: transparent;
+    margin-top: 4px;
+    margin-left: .4rem;
+    border-color: grey;
+    border-radius: 5px;
+}
+.modalDeliveryButton{
+    width:5rem;
+    height: 2rem;
+    background: transparent;
+    margin-left: .8rem;
+    border-color: grey;
+    border-radius: 5px;
+    margin-right: 10rem;
+}
+.deliveryTo{
+    display: block;
+    margin-top: .9rem;
+    margin-left: .4rem;
+    color: gray;
+}
+.modalAddressInput{
+    width: 21.5rem;
+    height: 2rem;
+    margin-left: .4rem;
+    margin-bottom: 1rem;
+    border: 1px solid gray;
+    outline: none;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.modalDeliveryCharges{
+    margin-left: .4em;
+    margin-right: 1rem;
+}
+.modalDeliveryDays{
+    color: grey;
+ }
+ .modalPayment{
+     margin-top: .7rem;
+     margin-left: .4rem;
+     color: gray;
+     display: block;
+ }
+ .modalOnlineButton{
+    width:6rem;
+    height: 2rem;
+    background: transparent;
+    margin-top: 7px;
+    margin-left: .4rem;
+    border-color: grey;
+    border-radius: 5px;
+}
+ 
+ .modalPayInPersonButton{
+    width:6rem;
+    height: 2rem;
+    background: transparent;
+    margin-top: 4px;
+    margin-left: .8rem;
+    border-color: grey;
+    border-radius: 5px;
+}
+.modalSubmitButton{
+    margin-top: 1.3rem;
+    margin-left: .4rem;
+    width: 21.5rem;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color:#ffa502 ;
+}
+hr
+{
+ color: gray;
+ margin-bottom: 2rem;
+ margin-top: 2rem;
+}
+.aboutTheProductOption{
+margin-left: 4rem;
+margin-right: 3rem;
+color: gray;
+}
+.sellerDetailsContainer{
+    height: 8rem;
+    width: 85rem;
+    background-color:#f7f1e3;
+    margin-top: 1rem;
+    margin-left: 6.5rem;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    flex-direction: row;
+    border-radius: 9px;
+}
+.ratings{
+    height: 18px;
+    width: 18px;
+    margin-top: 8px;
+}
+.sellerLocationLogo{
+    height: 20px;
+    width: 18px;
+}
+.sellerUserNameDiv{
+    margin-left: 1rem;
+    margin-top: 1.6rem;
+}
+.saleDiv{
+    margin-top: 2.5rem;
+    margin-left: 8rem;
+}
+.itemForSale{
+color: gray;
+}
+.totalSaleDiv{
+    margin-top: 2.5rem;
+    margin-left: 5rem;
+
+}
+.contactButton{ height: 2rem;margin-left: 8rem; width: 10rem;margin-top: 2.5rem;  border-color: #1e90ff;background-color:white; border-radius:25px ; -webkit-border-radius:25px ; -moz-border-radius:25px ; -ms-border-radius:25px ; -o-border-radius:25px ;
+}
+.visitStore{
+    height: 2rem;
+    width: 10rem;
+    margin-left: 2rem;
+    margin-top: 2.5rem;
+    border-radius: 25px;
+    background-color: #1e90ff;
+    border-color: #1e90ff;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.similarItemsTitle{
+    margin-left: 4rem;
+    margin-top: 2rem;
+    font-size: x-large;
+    font-weight: 100;
+    margin-bottom: .5rem;
+}
+.similarItemContainer{
+    margin-left: 9rem;
+    height: 44rem;
+    width: 80rem;
+}
+.redivContainer{
+    height: fit-content;
+    width: 18.1rem;
+    margin-top: 1rem;
+    border-radius: 9px;
+    margin-left: 1.5rem;
+    float: left;
+    background-color: #f5f6fa;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+.redivContainer:hover {
+    transition: transform .5s ease-in-out;
+    transform: scale(0.96);
+}
+
+.redivContainerImg{
+    height: 220px;
+    width: 290px;
+    background-color: black;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+}
+.reModelName{
+    font-size: large;
+    font-weight: 200;
+    display: block;
+    margin-left: 1rem;
+} 
+.relocationLogo{
+    width: 16px;
+    height: 18px;
+    margin-right: 4px;
+    margin-top: 5px;
+    margin-left: 1rem;
+}
+
+.reAddress{
+    font-size: small;
+    color: gray;
+}
+.reViewLogo{
+    width: 20px;
+    height: 20px;
+    margin-top: .4rem;
+    margin-left: 1rem;
+    margin-right: 4px;
+}
+.reViews{
+    font-size: small;
+    color: gray;
+}
+.reRate{
+    margin-top: .5rem;
+margin-left: 1rem;
+color: #1B9CFC
+}
+.divsion{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.lowerFooter
+{
+   height: 23rem;
+    width:100%;
+    display: flex;
+    background-color: #535c68;
+    padding-top: 1rem;
+}
+.conatinerServices{
+    width: 22rem;
+    height: 24rem;
+    margin-left: 20rem;
+}
+.service{
+    width: 23rem;
+    height: 3.5rem;
+    display: flex;
+    color: white;
+}
+.serviceImage{
+
+    height: 40px;
+    width: 50px;
+    margin-left: 1rem;
+}
+.serviceName{
+  margin-top: 2px;
+  margin-left: 10px;
+}
+.serviceNameBenifit
+{
+    color: gray;
+    font-size: large;
+}
+.stuff
+{
+    height: 22rem;
+    width:23rem ;
+    margin-left: 5rem;
+}
+.onlineShopping{
+    font-weight: 100;
+    font-size: x-large;
+    margin-bottom: .7rem;
+    color: #d1d8e0;
+}
+li{
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 1rem;
+    font-size: large;
+    cursor: pointer;
+    color: white;
+}
+li:hover{
+    color: #c7ecee;
+    transition: transform .5s ease-in-out;
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.linkContainer{
+    height: 22rem;
+    width:23rem;
+}
+.usefulLink{
+    font-weight: 100;
+    font-size: larger;
+    margin-bottom: .7rem;
+    font-size: x-large;
+    color: #d1d8e0;
+    
+}
+.footer{
+    height: 3rem;
+    width: 98rem;
+    background-color:#dff9fb;
+    display: flex;
+    justify-content: space-around;
+}
+.content{
+    color: gray;
+    margin-top: 1rem;
+}
+.fbLogo{
+    height: 20px;
+    width: 20px;
+    margin-left: 1rem;
+}
+.socialLogo{
+    margin-top: .9rem; 
+}
+.backTotop{
+    height: 2rem;
+    width: 8rem;
+    margin-right: 2rem;
+    font-size: medium;
+    font-weight: 100;
+    border-radius: 5px;
+}
+.backTotop:hover
+{
+    transition: transform .5s ease-in-out;
+    transform: scale(1.1);
+}
