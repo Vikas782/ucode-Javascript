@@ -14,6 +14,7 @@
     searchButton.innerText = "Search"
     SellingButton.innerText = "Start Selling Now";
 
+
     searchButton.addEventListener("click", function () {
         if (input.value.trim() == "") {
             alert("Please Enter Item Name")
@@ -87,6 +88,7 @@
     let buyNowButton = document.createElement("button");
     let makeAnOfferButton = document.createElement("button");
 
+
     phoneDiscription.classList.add("phoneDiscription")
     locationNviewDiv.classList.add("locationNviewDiv")
     locationLogo.classList.add("locationLogo")
@@ -116,7 +118,7 @@
     makeAnOfferButton.classList.add("makeAnOfferButton")
     buyNowButton.classList.add("buyNowButton")
 
-    let count = 0;
+    let count = 1;
     phoneHeading.innerHTML = "Apple iphone 11 Pro Max";
     locationLogo.src = "./img/Location-PNG.png"
     location.innerText = `Sec-66 Mohali 5 . miles away`
@@ -151,8 +153,8 @@
         quantityOfItem.value = count
     })
     subtractItem.addEventListener("click", function () {
-        if (count <= 0) {
-            quantityOfItem.value = 0;
+        if (count <= 1) {
+            quantityOfItem.value = 1;
             return
         }
         count--
@@ -163,8 +165,13 @@
     })
 
     buyNowButton.addEventListener("click", function () {
-        buyNowButton.disabled="true"
+    alert(`Name of the Model is: ${phoneHeading.innerHTML}               
+Color of the Model is : ${colorName.innerText}
+Price of the Model is :${ pricetag.innerText}
+Quantity of Model is : ${quantityOfItem.value}`)
     })
+
+
 
     productDetails.appendChild(phoneHeading);
     locationNviewDiv.appendChild(locationLogo);
@@ -197,6 +204,7 @@
     detailViewContainer.appendChild(imageConatiner);
     detailViewContainer.appendChild(productDetails);
     body.appendChild(detailViewContainer);
+
 
     let radioButtons = document.querySelectorAll(`input[type="radio"]`)
     radioButtons.forEach((button) => {
@@ -240,6 +248,8 @@
         })
     })
 
+
+
     //modal section
 
     let modal = document.createElement("modal")
@@ -260,6 +270,9 @@
     let modalPayInPersonButton = document.createElement("button")
     let modalSubmitButton = document.createElement("button")
 
+
+
+
     modal.classList.add("modal")
     modalHeading.classList.add("modalHeading")
     modalheaderContainer.classList.add("modalheaderContainer")
@@ -278,6 +291,8 @@
     modalOnlineButton.classList.add("modalOnlineButton")
     modalPayInPersonButton.classList.add("modalPayInPersonButton")
     modalSubmitButton.classList.add("modalSubmitButton")
+
+
 
     modalHeading.innerHTML = "Make Offer"
     crossButton.src = "./img/cross.png"
