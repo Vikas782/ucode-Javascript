@@ -237,7 +237,7 @@ font-size: large;
   font-size: large;
   margin-right: 1.5rem;
   border-radius: 5px;
-  background-color: #f5f6fa;
+  background-color: #dfe6e9;
 }
 .makeAnOfferButton{
     height: 2.5rem;
@@ -430,7 +430,7 @@ color: gray;
 }
 .similarItemContainer{
     margin-left: 9rem;
-    height: 44rem;
+    height: 68rem;
     width: 80rem;
 }
 .redivContainer{
@@ -557,10 +557,7 @@ li:hover{
     color: #c7ecee;
     transition: transform .5s ease-in-out;
     transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
+
 }
 .linkContainer{
     height: 22rem;

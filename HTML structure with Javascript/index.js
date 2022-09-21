@@ -14,7 +14,6 @@
     searchButton.innerText = "Search"
     SellingButton.innerText = "Start Selling Now";
 
-
     searchButton.addEventListener("click", function () {
         if (input.value.trim() == "") {
             alert("Please Enter Item Name")
@@ -59,7 +58,6 @@
     imageConatiner.appendChild(imageDiv1);
     imageConatiner.appendChild(imageDiv2);
 
-
     //product details
     let phoneHeading = document.createElement("h2")
     let phoneDiscription = document.createElement("div")
@@ -88,9 +86,6 @@
     let deliveryDays = document.createElement("span")
     let buyNowButton = document.createElement("button");
     let makeAnOfferButton = document.createElement("button");
-
-
-
 
     phoneDiscription.classList.add("phoneDiscription")
     locationNviewDiv.classList.add("locationNviewDiv")
@@ -168,9 +163,8 @@
     })
 
     buyNowButton.addEventListener("click", function () {
-        confirm("Proceed to Checkout?")
+        buyNowButton.disabled="true"
     })
-
 
     productDetails.appendChild(phoneHeading);
     locationNviewDiv.appendChild(locationLogo);
@@ -203,7 +197,6 @@
     detailViewContainer.appendChild(imageConatiner);
     detailViewContainer.appendChild(productDetails);
     body.appendChild(detailViewContainer);
-
 
     let radioButtons = document.querySelectorAll(`input[type="radio"]`)
     radioButtons.forEach((button) => {
@@ -247,8 +240,6 @@
         })
     })
 
-
-
     //modal section
 
     let modal = document.createElement("modal")
@@ -269,9 +260,6 @@
     let modalPayInPersonButton = document.createElement("button")
     let modalSubmitButton = document.createElement("button")
 
-
-
-
     modal.classList.add("modal")
     modalHeading.classList.add("modalHeading")
     modalheaderContainer.classList.add("modalheaderContainer")
@@ -290,8 +278,6 @@
     modalOnlineButton.classList.add("modalOnlineButton")
     modalPayInPersonButton.classList.add("modalPayInPersonButton")
     modalSubmitButton.classList.add("modalSubmitButton")
-
-
 
     modalHeading.innerHTML = "Make Offer"
     crossButton.src = "./img/cross.png"
@@ -432,6 +418,7 @@
             id: 1,
             name: "Apple iphone 11 Pro Max",
             price: "$1999.99",
+            view:"11,436",
             img: "./img/reuse.jfif",
             des: "The biggest iPhone in Apple's lineup, the iPhone 11 Pro Max looks like an incremental upgrade over the iPhone XS Max but it brings some significant changes under the hood. There's a triple camera setup at the back now, letting you choose between the Wide, Ultra Wide, and Telephoto lenses."
         },
@@ -439,6 +426,7 @@
             id: 2,
             name: "Apple iphone 12 Plus",
             price: "$992",
+            view:"15,436",
             img: "./img/iphone1.jpg",
             des: "Apple iPhone 12 Pro Plus is the upcoming mobile that is a great combination of functionality and style. The phone is speculated to be launched in India on July 24, 2020 (Unofficial) at a starting price of Rs 124,990. You will be able to buy this lightweight, sleek and stylish phone in different color options."
         },
@@ -446,6 +434,7 @@
             id: 3,
             name: "Apple iphone13",
             price: "$998",
+            view: "18,436",
             img: "./img/iphone2.jpg",
             des: "The iPhone 13 display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 15.40 centimetres / 6.06 inches diagonally (actual viewable area is less)."
         },
@@ -453,6 +442,7 @@
             id: 4,
             name: "Apple iphone14",
             price: "$1002",
+            view:"19,436",
             img: "./img/iphone3.jpg",
             des: "Apple iphone 14 looks identical to the iPhone 13, but there's a new 6.7-inch model called the iPhone 14 Plus. Under-the-hood improvements include 6GB of RAM, a 5-core GPU, Bluetooth 5.3, and multiple camera updates. Color options have been updated with (PRODUCT)RED, blue, purple, midnight, and starlight."
         },
@@ -460,6 +450,7 @@
             id: 5,
             name: "Apple iphone14 Plus",
             price: "$999",
+            view:"13,636",
             img: "./img/iphone4.jpg",
             des: "Apple iPhone 14 Plus is a perfect choice that is available at a starting price of Rs 89,900. The phone offers a slip-free grip as it is light in weight and is easy to carry.This stylish handset from Apple comes with a 6.7 inches (17.02 cm) display that has a resolution of 2778 x 1284 Pixels offering immersive and comfortable viewing"
         }
@@ -468,6 +459,7 @@
             id: 6,
             name: "Apple iphone14 Pro Max",
             price: "$1008",
+            view:"22,437",
             img: "./img/iphone5.jpg",
             des: "The iPhone 14 Pro Max display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 17.00 centimetres / 6.69 inches diagonally (actual viewable area is less)."
         }
@@ -476,6 +468,7 @@
             id: 7,
             name: "Apple iphone SE(2022)",
             price: "$998",
+            view:"17,937",
             img: "./img/iphone1.jpg",
             des: "Apple iphone SE(2022)is powered by an A15 Bionic chipset that gives you faster and lag-free performance. Moreover, the Apple smartphone is available in 64GB, 128GB, and 256GB storage variants in midnight, starlight, and (PRODUCT)RED color variants. Besides, the phone houses a Li-Ion mAh non-removable battery that supports fast charging."
         }
@@ -484,9 +477,42 @@
             id: 8,
             name: "Apple iphone12 Mini",
             price: "$990",
+            view:"14,236",
             img: "./img/iphone2.jpg",
             des: "The iPhone 12 mini display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 5.42 inches diagonally (actual viewable area is less)."
-        }
+        },
+        {
+            id: 9,
+            name: "Apple iphone4",
+            price: "$880",
+            view:"10,433",
+            img: "./img/iphone3.jpg",
+            des: "The iPhone 4 introduced a new hardware design to the iPhone family, which Apple's CEO Steve Jobs touted as the thinnest smartphone in the world at the time; it consisted of a stainless steel frame which doubled as an antenna, with internal components situated between two panels of aluminosilicate glass."
+        },
+        {
+            id: 10,
+            name: "Apple iphone4s",
+            price: "$889",
+            view:  "13,438",
+            img: "./img/iphone4.jpg",
+            des: "The iPhone 4s is the fifth generation of Apple’s smartphone. While no differences to the phone’s external characteristics were made, this version of the iPhone released a year later after its very successful predecessor introduced a few changes to the 4s version compared to the iPhone 4, including increased battery life, extended wireless connectivity and a more powerful dual­core processor."
+        },
+        {
+            id: 11,
+            name: "Apple iphone5",
+            price: "$890",
+            view:"19,336",
+            img: "./img/iphone5.jpg",
+            des: "The iPhone 5 is the sixth generation of the Apple smartphone. This version has introduced great design changes, including a lighter body and a taller screen. The iPhone 5 introduced features that were not presented on the iPhone’s previous generations, for instance, LTE support, Lightning and a new, more compact, version of the dock connector."
+        },
+        {
+            id: 12,
+            name: "Apple iphone6 Spotlight",
+            price: "$899",
+            view:"21,341",
+            img: "./img/iphone1.jpg",
+            des: "Fortunately your iPhone has an awesome search feature called Spotlight Search that makes things a lot easier. We will show you how to search your iPhone 6 with this tool in the guide below. Apple devices, such as the iPhone, iPad and Macbooks, have a helpful feature called Spotlight Search."
+        } 
     ]
     //div
     let similarItemContainer = document.createElement("div")
@@ -516,7 +542,7 @@
         reLocationLogo.src = "./img/Location-PNG.png"
         reAddress.innerHTML = "5 Miles Away"
         reViewLogo.src = "./img/view.png"
-        reViews.innerHTML = "14,323 viewed"
+        reViews.innerHTML = `${model.view}`
         reRate.innerHTML = `${model.price}`
 
         redivContainer.appendChild(redivContainerImg)
@@ -537,6 +563,8 @@
             phoneHeading.innerHTML = reModelName.innerHTML
             pricetag.innerText = reRate.innerHTML
             phoneDiscription.innerHTML = `${model.des}`
+            viewedPeople.innerText=`${model.view}`
+            
 
         })
 
@@ -549,7 +577,6 @@
 
     })
     body.append(similarItemContainer)
-
 
 
     let lowerFooter = document.createElement("section")
@@ -693,7 +720,6 @@
     let git = document.createElement("img")
     let linkdin = document.createElement("img")
 
-
     footer.classList.add("footer")
     content.classList.add("content")
     socialLogo.classList.add("socialLogo")
@@ -703,16 +729,12 @@
     git.classList.add("fbLogo")
     linkdin.classList.add("fbLogo")
 
-
-
     content.innerHTML = "silios.com copyright 2021. All right reserved"
     fbLogo.src = "./img/fb.png"
     twitter.src = "./img/twitter.png"
     insta.src = "./img/insta.png"
     git.src = "./img/git.png"
     linkdin.src = "./img/linkdin.png"
-
-
 
     socialLogo.appendChild(fbLogo)
     socialLogo.appendChild(twitter)
@@ -734,6 +756,5 @@
             behavior: "smooth"
         })
     })
-
 
 })()
